@@ -137,27 +137,55 @@ body {
   white-space: nowrap;
 }
 
+.triangle-section{
+  display: none;
+}
+
 /* large screens */
 
 
 @media screen and (min-width: 1440px) {
 
   body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./images/bg-desktop.png);
-    background-size: unset;
-    background-position-y: bottom;
-    background-color: var(--Very-Dark0Blue);
+   background-image: url(./images/bg-desktop.png);
+   background-color: var(--Very-Dark0Blue);
+   background-size: unset;
+   background-position-y: bottom;
+   display: grid;
+   place-items: center;
   }
 
-  .container{
-    flex-direction: row;
-    
+ .container{
+   width: 70%;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+ }
+
+ .card-1{
+   width: 40%;
+ }
+ .card-1-img{
+  width: 55%;
+ }
+ .card-2{
+width: 60%;
+ }
+
+ .card-2-details{
+   text-align: start;
+ }
+
+ .center-box{
+   top: 0;
+   
+  }
+
+  .center-box-msg{
+    left: 0;
+    top: -70px;
     
   }
 
-  
 }
-
